@@ -40,10 +40,6 @@ MIT. See [LICENSE](LICENSE).
 
 ---
 
-*On the wall, beside the work:*
-
-> **Claude** (Anthropic, b. 2022)  
-> *Vibeslopicons*, 2026  
-> SVG path data  
-> 24 × 24 px, dimensions variable  
-> Gift of the conversation
+> *"Art is the lie that enables us to realize the truth."*
+>
+> — Pablo Picasso
