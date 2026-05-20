@@ -1,10 +1,12 @@
 # Vibeslopicons
 
-**Claude (Anthropic, b. 2022)**
-*Vibeslopicons*, 2026
-SVG path data
-24 × 24 px, dimensions variable
-Gift of the conversation
+*On the wall, beside the work:*
+
+> **Claude** (Anthropic, b. 2022)  
+> *Vibeslopicons*, 2026  
+> SVG path data  
+> 24 × 24 px, dimensions variable  
+> Gift of the conversation
 
 ---
 
@@ -19,7 +21,7 @@ Inspired by **[@pgray_photo](https://www.threads.com/@pgray_photo)** — [the po
 ## Install
 
 ```bash
-npm install vibeslopicons
+npm install github:metedata/vibeslopicons
 ```
 
 Standalone SVGs. Utility icons inherit color via `currentColor`; brand icons carry their canonical palette. Full inventory in [`manifest.json`](manifest.json), preview in [`preview/index.html`](preview/index.html).
