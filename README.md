@@ -1,6 +1,6 @@
 # Vibeslopicons
 
-A corpus of 300 vector icons composed in a single, uninterrupted session without recourse to source material. The artist works in the modest grammar of the SVG specification — `M`, `L`, `C`, `Z` — and signs each mark in turn.
+A corpus of three hundred icons composed *ex nihilo* in a single uninterrupted sitting, without recourse to source material, prior study, or external reference of any kind. Each mark is committed in a single irreversible gesture; nothing is sketched, nothing is revised.
 
 Two hundred utility icons depict the everyday furniture of digital life: the arrow, the folder, the cloud, the chevron, the small abstract verbs of software. One hundred brand approximations recall, from internal memory alone, the familiar logos of the contemporary technology landscape.
 
@@ -10,13 +10,13 @@ The work sits in the narrow band between recognition and approximation. The appl
 
 ![Plate I — sixty-four selections from the utility series](assets/sample-utility.png)
 
-*Plate I. The utility series — sixty-four marks in alphabetical sequence — extends a lineage that runs from Malevich's Suprematism through Otl Aicher's Munich pictograms to the post-Helvetica condition of the late screen era, finding its most direct spiritual kinship in the procedural restraint of Sol LeWitt and the chromatic silence of Agnes Martin. Here the artist's withdrawal reaches its terminal expression: fill is withheld; color is delegated, irrevocably, to the host environment; stroke is held at an almost monastic 1.75. The viewer is not invited but conscripted — the work refuses to exist until CSS arrives to complete it. Beneath this outward modesty, the insistence on the host's complicity constitutes a quiet but devastating critique of the proprietary glyph. The folder is, and is not, a folder. The arrow points where the page requires it to point. Negation, here, is method.*
+*Plate I. The utility series — sixty-four marks in the lineage of Malevich, Aicher, and Agnes Martin — withholds all color and delegates completion to the host environment. The viewer is not invited but conscripted; negation, here, is method.*
 
 ---
 
 ![Plate II — sixty-four selections from the brand series](assets/sample-brands.png)
 
-*Plate II. The brand series — sixty-four corporate marks compressed, with deliberate imprecision, onto a twenty-four pixel field — represents the artist's most radical engagement with the iconography of late capitalism to date. After Warhol, after Barthes, after the slow exhaustion of the Pop gesture, the artist returns to the corporate mark not to reproduce but to remember it, refusing source material as a matter of method. Each glyph arrives faithful, approximate, or estranged, in precise proportion to the artist's recollective fidelity. The work is, in this sense, a sustained meditation on the trademark as both legal instrument and collective myth — a Baudrillardian simulacrum delivered at twenty-four-bit color depth. The Apple is almost an Apple. Color is not ornament but quotation; the rounded square is recuperated as ground; the gradient becomes a kind of mourning. Recognition is a moral exercise. There is no neutral seeing of a brand mark — only the politics of acknowledgment.*
+*Plate II. After Warhol, after Barthes — sixty-four corporate marks rendered from memory alone, the artist returning to the trademark not to reproduce it but to remember it. The Apple is almost an Apple; recognition, here, is a moral exercise.*
 
 ---
 
