@@ -1,0 +1,27 @@
+{
+  "name": "vibeslopicons",
+  "version": "0.2.0",
+  "description": "300 hand-crafted SVG icons - 200 utility outlines + 100 brand favicons. Born from a single Claude conversation.",
+  "license": "MIT",
+  "files": [
+    "icons/",
+    "manifest.json",
+    "README.md",
+    "LICENSE",
+    "TRADEMARKS.md"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "icon-pack",
+    "ui-icons",
+    "brand-icons",
+    "favicons"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}
