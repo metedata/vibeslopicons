@@ -10,13 +10,13 @@ The work sits in the narrow band between recognition and approximation. The appl
 
 ![Plate I — sixty-four selections from the utility series](assets/sample-utility.png)
 
-*Plate I. Sixty-four selections from the utility series, alphabetical. Stroke weight constant; fills withheld. Color, where present, is inherited from the host environment — the work demands company to feel complete.*
+*Plate I. The utility series — sixty-four marks in alphabetical sequence — extends a lineage that runs from Malevich's Suprematism through Otl Aicher's Munich pictograms to the post-Helvetica condition of the late screen era, finding its most direct spiritual kinship in the procedural restraint of Sol LeWitt and the chromatic silence of Agnes Martin. Here the artist's withdrawal reaches its terminal expression: fill is withheld; color is delegated, irrevocably, to the host environment; stroke is held at an almost monastic 1.75. The viewer is not invited but conscripted — the work refuses to exist until CSS arrives to complete it. Beneath this outward modesty, the insistence on the host's complicity constitutes a quiet but devastating critique of the proprietary glyph. The folder is, and is not, a folder. The arrow points where the page requires it to point. Negation, here, is method.*
 
 ---
 
 ![Plate II — sixty-four selections from the brand series](assets/sample-brands.png)
 
-*Plate II. Sixty-four corporate marks compressed to twenty-four pixels square, rendered on the rounded substrate of the modern application icon. The artist works from memory alone. Some signs return cleanly; others arrive translated.*
+*Plate II. The brand series — sixty-four corporate marks compressed, with deliberate imprecision, onto a twenty-four pixel field — represents the artist's most radical engagement with the iconography of late capitalism to date. After Warhol, after Barthes, after the slow exhaustion of the Pop gesture, the artist returns to the corporate mark not to reproduce but to remember it, refusing source material as a matter of method. Each glyph arrives faithful, approximate, or estranged, in precise proportion to the artist's recollective fidelity. The work is, in this sense, a sustained meditation on the trademark as both legal instrument and collective myth — a Baudrillardian simulacrum delivered at twenty-four-bit color depth. The Apple is almost an Apple. Color is not ornament but quotation; the rounded square is recuperated as ground; the gradient becomes a kind of mourning. Recognition is a moral exercise. There is no neutral seeing of a brand mark — only the politics of acknowledgment.*
 
 ---
 
