@@ -301,8 +301,81 @@ footer { max-width: 1200px; margin: 64px auto 0; padding-top: 24px; border-top: 
 `;
 fs.writeFileSync(path.join(PREVIEW_DIR, 'index.html'), previewHtml);
 
+// ============================================================================
+// PNG PHASE: convert each SVG to a 64×64 PNG via rsvg-convert
+// ============================================================================
+const { execSync } = require('child_process');
+
+function hasCommand(cmd) {
+  try { execSync(`command -v ${cmd}`, { stdio: 'pipe' }); return true; }
+  catch { return false; }
+}
+
+function svgToPng(svgPath, pngPath, size) {
+  try {
+    execSync(`rsvg-convert -w ${size} -h ${size} "${svgPath}" -o "${pngPath}"`, { stdio: 'pipe' });
+    return true;
+  } catch { return false; }
+}
+
+const hasRsvg = hasCommand('rsvg-convert');
+let pngCount = 0;
+
+if (hasRsvg) {
+  for (const dir of [UTIL_DIR, BRAND_DIR]) {
+    const files = fs.readdirSync(dir).filter(f => f.endsWith('.svg'));
+    for (const file of files) {
+      const svgPath = path.join(dir, file);
+      const pngPath = svgPath.replace(/\.svg$/, '.png');
+      if (!fs.existsSync(pngPath)) {
+        if (svgToPng(svgPath, pngPath, 64)) pngCount++;
+      }
+    }
+  }
+}
+
+// ============================================================================
+// SAMPLE GRID PHASE: composite 8×8 grids for the README
+// ============================================================================
+const ASSETS_DIR = path.join(ROOT, 'assets');
+fs.mkdirSync(ASSETS_DIR, { recursive: true });
+
+function extractSvgInner(svgString) {
+  const m = svgString.match(/<svg[^>]*>([\s\S]*?)<\/svg>/);
+  return m ? m[1] : '';
+}
+
+function makeGrid(iconList, isUtility) {
+  const cellSize = 48;
+  const cols = 8;
+  const totalSize = cellSize * cols;
+  const cellOffset = (cellSize - 24) / 2;
+  const gAttrs = isUtility
+    ? ' stroke="#18181b" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round"'
+    : '';
+  const cells = iconList.slice(0, 64).map((icon, i) => {
+    const row = Math.floor(i / cols);
+    const col = i % cols;
+    const x = col * cellSize;
+    const y = row * cellSize;
+    const inner = extractSvgInner(icon.content);
+    return `<rect x="${x+1}" y="${y+1}" width="${cellSize-2}" height="${cellSize-2}" fill="#fafafa"/><g transform="translate(${x+cellOffset} ${y+cellOffset})"${gAttrs}>${inner}</g>`;
+  }).join('');
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${totalSize} ${totalSize}" width="${totalSize}" height="${totalSize}"><rect width="${totalSize}" height="${totalSize}" fill="#d4d4d8"/>${cells}</svg>\n`;
+}
+
+fs.writeFileSync(path.join(ASSETS_DIR, 'sample-utility.svg'), makeGrid(utility, true));
+fs.writeFileSync(path.join(ASSETS_DIR, 'sample-brands.svg'), makeGrid(brands, false));
+
+if (hasRsvg) {
+  svgToPng(path.join(ASSETS_DIR, 'sample-utility.svg'), path.join(ASSETS_DIR, 'sample-utility.png'), 768);
+  svgToPng(path.join(ASSETS_DIR, 'sample-brands.svg'), path.join(ASSETS_DIR, 'sample-brands.png'), 768);
+}
+
 console.log(`Seeded ${seededUtil} new utility + ${seededBrand} new brand icons.`);
 console.log(`OK  ${utility.length} utility + ${brands.length} brand = ${utility.length + brands.length} icons`);
 console.log(`    icons/utility/*.svg, icons/brands/*.svg`);
+console.log(`    icons/utility/*.png, icons/brands/*.png (${pngCount} new, 64×64)${hasRsvg ? '' : ' — SKIPPED: rsvg-convert not found'}`);
 console.log(`    preview/index.html`);
 console.log(`    manifest.json`);
+console.log(`    assets/sample-utility.{svg,png}, assets/sample-brands.{svg,png}`);
